@@ -68,8 +68,8 @@ namespace AssetsResizeMagick
                 }
             }
 
-            // 処理
-            if(String.IsNullOrEmpty(translateType.folderName) == false)
+            // 出力フォルダ作成
+            if (String.IsNullOrEmpty(translateType.folderName) == false)
             {
                 currentPath += String.Format(@"\{0}", translateType.folderName);
 
@@ -116,6 +116,20 @@ namespace AssetsResizeMagick
                 {
                     foreach (var type in translateType.images)
                     {
+                        string outPath = currentPath;
+
+                        // 出力フォルダ作成
+                        if (String.IsNullOrEmpty(type.folderName) == false)
+                        {
+                            outPath += String.Format(@"\{0}", type.folderName);
+
+                            if (Directory.Exists(outPath) == false)
+                            {
+                                Directory.CreateDirectory(outPath);
+                            }
+                        }
+
+                        // 出力
                         using (var editImage = new ImageMagick.MagickImage(magickImage))
                         {
                             editImage.Format = ImageMagick.MagickFormat.Png;
@@ -124,7 +138,7 @@ namespace AssetsResizeMagick
                             // 変わらなっかたが念のため
                             editImage.Quality = 100;
 
-                            editImage.Write(String.Format(@"{0}\{1}", currentPath, type.filename));
+                            editImage.Write(String.Format(@"{0}\{1}", outPath, type.filename));
                         }
                     }
                 }
