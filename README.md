@@ -28,3 +28,6 @@ x ... 変換後の横のサイズ(必須)
 y ... 変換後の縦のサイズ(必須)  
 folderName ... 出力するフォルダ名  
 要素の内容 ... 変換後のファイル名、無ければ元のファイル名と同じものになる  
+
+## LICENSE
+[Magick.NET](http://magick.codeplex.com/license "Magick.NET")  
