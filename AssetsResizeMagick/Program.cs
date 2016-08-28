@@ -26,6 +26,7 @@ namespace AssetsResizeMagick
 
         private static bool SettingsCheck()
         {
+            // 存在確認
             if (File.Exists(settingPath) == false)
             {
                 Console.WriteLine("設定ファイルがありません");
@@ -33,16 +34,19 @@ namespace AssetsResizeMagick
                 return false;
             }
 
+            // 取得
             var fs = new FileStream(settingPath, FileMode.Open);
             var serializer = new XmlSerializer(typeof(Settings));
             settings = (Settings)serializer.Deserialize(fs);
 
+            // 表示
             for (int i = 0; i < settings.types.Count; i++)
             {
                 var type = settings.types[i];
                 Console.WriteLine("{0}, {1}", i + 1, type.name);
             }
 
+            // 選択
             Console.WriteLine("どのサイズに変換しますか？");
             while (true)
             {
@@ -61,6 +65,17 @@ namespace AssetsResizeMagick
                 {
                     Console.WriteLine("入力値が正しくありません");
                     continue;
+                }
+            }
+
+            // 処理
+            if(String.IsNullOrEmpty(translateType.folderName) == false)
+            {
+                currentPath += String.Format(@"\{0}", translateType.folderName);
+
+                if (Directory.Exists(currentPath) == false)
+                {
+                    Directory.CreateDirectory(currentPath);
                 }
             }
 
