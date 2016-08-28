@@ -129,6 +129,16 @@ namespace AssetsResizeMagick
                             }
                         }
 
+                        // 出力ファイル名追加
+                        if (String.IsNullOrEmpty(type.filename) == false)
+                        {
+                            outPath += @"\" + type.filename;
+                        }
+                        else
+                        {
+                            outPath += String.Format(@"\{0}.png", Path.GetFileNameWithoutExtension(path));
+                        }
+
                         // 出力
                         using (var editImage = new ImageMagick.MagickImage(magickImage))
                         {
@@ -138,7 +148,7 @@ namespace AssetsResizeMagick
                             // 変わらなっかたが念のため
                             editImage.Quality = 100;
 
-                            editImage.Write(String.Format(@"{0}\{1}", outPath, type.filename));
+                            editImage.Write(outPath);
                         }
                     }
                 }
