@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- このファイルは実行ファイルと同じディレクトリに置く -->
+<Types>
+  <Type name="UWP Square44x44Logo" folderName="Assets">
+    <Image x="44" y="44">Square44x44Logo.scale-100.png</Image>
+    <Image x="55" y="55">Square44x44Logo.scale-125.png</Image>
+    <Image x="66" y="66">Square44x44Logo.scale-150.png</Image>
+    <Image x="88" y="88">Square44x44Logo.scale-200.png</Image>
+    <Image x="176" y="176">Square44x44Logo.scale-400.png</Image>
+  </Type>
+
+  <Type name="UWP Square71x71Logo" folderName="Assets">
+    <Image x="71" y="71">Square71x71Logo.scale-100.png</Image>
+    <Image x="89" y="89">Square71x71Logo.scale-125.png</Image>
+    <Image x="107" y="107">Square71x71Logo.scale-150.png</Image>
+    <Image x="142" y="142">Square71x71Logo.scale-200.png</Image>
+    <Image x="284" y="284">Square71x71Logo.scale-400.png</Image>
+  </Type>
+
+  <Type name="UWP Square150x150Logo" folderName="Assets">
+    <Image x="150" y="150">Square150x150Logo.scale-100.png</Image>
+    <Image x="188" y="188">Square150x150Logo.scale-125.png</Image>
+    <Image x="255" y="255">Square150x150Logo.scale-150.png</Image>
+    <Image x="300" y="300">Square150x150Logo.scale-200.png</Image>
+    <Image x="600" y="600">Square150x150Logo.scale-400.png</Image>
+  </Type>
+
+  <Type name="UWP Square310x150LogoLogo" folderName="Assets">
+    <Image x="310" y="150">Square310x150Logo.scale-100.png</Image>
+    <Image x="388" y="188">Square310x150Logo.scale-125.png</Image>
+    <Image x="465" y="255">Square310x150Logo.scale-150.png</Image>
+    <Image x="620" y="300">Square310x150Logo.scale-200.png</Image>
+    <Image x="1240" y="600">Square310x150Logo.scale-400.png</Image>
+  </Type>
+
+  <Type name="UWP targetsize altform-unplated" folderName="Assets">
+    <Image x="16" y="16">Square44x44Logo.targetsize-16_altform-unplated.png</Image>
+    <Image x="24" y="24">Square44x44Logo.targetsize-24_altform-unplated.png</Image>
+    <Image x="32" y="32">Square44x44Logo.targetsize-32_altform-unplated.png</Image>
+    <Image x="48" y="48">Square44x44Logo.targetsize-48_altform-unplated.png</Image>
+    <Image x="256" y="256">Square44x44Logo.targetsize-256_altform-unplated.png</Image>
+  </Type>
+</Types>
