@@ -71,7 +71,7 @@ namespace AssetsResizeMagick
             // 出力フォルダ作成
             if (String.IsNullOrEmpty(translateType.folderName) == false)
             {
-                currentPath += String.Format(@"\{0}", translateType.folderName);
+                currentPath += @"\" + translateType.folderName;
 
                 if (Directory.Exists(currentPath) == false)
                 {
@@ -121,7 +121,7 @@ namespace AssetsResizeMagick
                         // 出力フォルダ作成
                         if (String.IsNullOrEmpty(type.folderName) == false)
                         {
-                            outPath += String.Format(@"\{0}", type.folderName);
+                            outPath += @"\" + type.folderName;
 
                             if (Directory.Exists(outPath) == false)
                             {
