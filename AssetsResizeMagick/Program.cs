@@ -21,34 +21,7 @@ namespace AssetsResizeMagick
 
             if (!SettingsCheck()) return;
 
-            for (int i = 1; i < files.Length; i++)
-            {
-                var path = files[i];
-
-                var magicSettings = new ImageMagick.MagickReadSettings();
-                magicSettings.Density = new ImageMagick.Density(dpi);
-                magicSettings.BackgroundColor = new ImageMagick.MagickColor("#00000000");
-
-                using (var magickImage = new ImageMagick.MagickImage(path, magicSettings))
-                {
-                    foreach (var item in translateType.images)
-                    {
-                        using (var editImage = new ImageMagick.MagickImage(magickImage))
-                        {
-                            editImage.Format = ImageMagick.MagickFormat.Png;
-                            editImage.Scale(item.x, item.y);
-
-                            // 変わらなっかたが念のため
-                            editImage.Quality = 100;
-
-                            editImage.Write(currentPath + @"\" + item.filename);
-                        }
-                    }
-                }
-            }
-
-            Console.WriteLine("終了しました");
-            Console.ReadLine();
+            Translate();
         }
 
         private static bool SettingsCheck()
