@@ -40,7 +40,7 @@ namespace AssetsResizeMagick
             for (int i = 0; i < settings.types.Count; i++)
             {
                 var type = settings.types[i];
-                Console.WriteLine((i + 1) + ", " + type.name);
+                Console.WriteLine("{0}, {1}", i + 1, type.name);
             }
 
             Console.WriteLine("どのサイズに変換しますか？");
@@ -52,7 +52,7 @@ namespace AssetsResizeMagick
                     && result > 0
                     && result < settings.types.Count + 1)
                 {
-                    Console.WriteLine(result + "番に変換します");
+                    Console.WriteLine("{0}番に変換します", result);
 
                     translateType = settings.types[result - 1];
                     break;
@@ -99,17 +99,17 @@ namespace AssetsResizeMagick
 
                 using (var magickImage = new ImageMagick.MagickImage(path, magicSettings))
                 {
-                    foreach (var item in translateType.images)
+                    foreach (var type in translateType.images)
                     {
                         using (var editImage = new ImageMagick.MagickImage(magickImage))
                         {
                             editImage.Format = ImageMagick.MagickFormat.Png;
-                            editImage.Scale(item.x, item.y);
+                            editImage.Scale(type.x, type.y);
 
                             // 変わらなっかたが念のため
                             editImage.Quality = 100;
 
-                            editImage.Write(currentPath + @"\" + item.filename);
+                            editImage.Write(String.Format(@"{0}\{1}", currentPath, type.filename));
                         }
                     }
                 }
