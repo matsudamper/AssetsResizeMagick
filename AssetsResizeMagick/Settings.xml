@@ -33,12 +33,12 @@
     <Image x="1240" y="1240">Square310x310Logo.scale-400.png</Image>
   </Type>
 
-  <Type name="UWP Square310x150Logo" folderName="Assets">
-    <Image x="310" y="150">Square310x150Logo.scale-100.png</Image>
-    <Image x="388" y="188">Square310x150Logo.scale-125.png</Image>
-    <Image x="465" y="255">Square310x150Logo.scale-150.png</Image>
-    <Image x="620" y="300">Square310x150Logo.scale-200.png</Image>
-    <Image x="1240" y="600">Square310x150Logo.scale-400.png</Image>
+  <Type name="UWP Wide310x150Logo" folderName="Assets">
+    <Image x="310" y="150">Wide310x150Logo.scale-100.png</Image>
+    <Image x="388" y="188">Wide310x150Logo.scale-125.png</Image>
+    <Image x="465" y="255">Wide310x150Logo.scale-150.png</Image>
+    <Image x="620" y="300">Wide310x150Logo.scale-200.png</Image>
+    <Image x="1240" y="600">Wide310x150Logo.scale-400.png</Image>
   </Type>
 
   <Type name="UWP targetsize altform-unplated" folderName="Assets">
