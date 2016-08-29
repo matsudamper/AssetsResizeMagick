@@ -25,7 +25,7 @@
     <Image x="600" y="600">Square150x150Logo.scale-400.png</Image>
   </Type>
 
-  <Type name="UWP Square310x150LogoLogo" folderName="Assets">
+  <Type name="UWP Square310x150Logo" folderName="Assets">
     <Image x="310" y="150">Square310x150Logo.scale-100.png</Image>
     <Image x="388" y="188">Square310x150Logo.scale-125.png</Image>
     <Image x="465" y="255">Square310x150Logo.scale-150.png</Image>
