@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!-- このファイルは実行ファイルと同じディレクトリに置く -->
 <Types>
-  <Type name="UWP Square44x44Logo" folderName="Assets">
+  <Type name="UWP list" folderName="Assets">
     <Image x="44" y="44">Square44x44Logo.scale-100.png</Image>
     <Image x="55" y="55">Square44x44Logo.scale-125.png</Image>
     <Image x="66" y="66">Square44x44Logo.scale-150.png</Image>
@@ -9,7 +9,7 @@
     <Image x="176" y="176">Square44x44Logo.scale-400.png</Image>
   </Type>
 
-  <Type name="UWP Square71x71Logo" folderName="Assets">
+  <Type name="UWP small" folderName="Assets">
     <Image x="71" y="71">Square71x71Logo.scale-100.png</Image>
     <Image x="89" y="89">Square71x71Logo.scale-125.png</Image>
     <Image x="107" y="107">Square71x71Logo.scale-150.png</Image>
@@ -17,15 +17,13 @@
     <Image x="284" y="284">Square71x71Logo.scale-400.png</Image>
   </Type>
 
-  <Type name="UWP Square150x150Logo" folderName="Assets">
+  <Type name="UWP normal and large" folderName="Assets">
     <Image x="150" y="150">Square150x150Logo.scale-100.png</Image>
     <Image x="188" y="188">Square150x150Logo.scale-125.png</Image>
     <Image x="225" y="225">Square150x150Logo.scale-150.png</Image>
     <Image x="300" y="300">Square150x150Logo.scale-200.png</Image>
     <Image x="600" y="600">Square150x150Logo.scale-400.png</Image>
-  </Type>
-  
-  <Type name="UWP Square310x310Logo" folderName="Assets">
+
     <Image x="310" y="310">Square310x310Logo.scale-100.png</Image>
     <Image x="388" y="388">Square310x310Logo.scale-125.png</Image>
     <Image x="465" y="465">Square310x310Logo.scale-150.png</Image>
@@ -33,12 +31,18 @@
     <Image x="1240" y="1240">Square310x310Logo.scale-400.png</Image>
   </Type>
 
-  <Type name="UWP Wide310x150Logo" folderName="Assets">
+  <Type name="UWP wide and splash" folderName="Assets">
     <Image x="310" y="150">Wide310x150Logo.scale-100.png</Image>
     <Image x="388" y="188">Wide310x150Logo.scale-125.png</Image>
     <Image x="465" y="255">Wide310x150Logo.scale-150.png</Image>
     <Image x="620" y="300">Wide310x150Logo.scale-200.png</Image>
     <Image x="1240" y="600">Wide310x150Logo.scale-400.png</Image>
+
+    <Image x="620" y="300">SplashScreen.scale-100.png</Image>
+    <Image x="775" y="375">SplashScreen.scale-125.png</Image>
+    <Image x="930" y="450">SplashScreen.scale-150.png</Image>
+    <Image x="1240" y="600">SplashScreen.scale-200.png</Image>
+    <Image x="2480" y="1200">SplashScreen.scale-400.png</Image>
   </Type>
 
   <Type name="UWP targetsize altform-unplated" folderName="Assets">
