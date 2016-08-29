@@ -8,6 +8,14 @@
     <Image x="100" y="100">StoreLogo.scale-200.png</Image>
     <Image x="200" y="200">StoreLogo.scale-400.png</Image>
   </Type>
+  
+  <Type name="UWP badge" folderName="Assets">
+    <Image x="24" y="24">badge.scale-100.png</Image>
+    <Image x="30" y="30">badge.scale-125.png</Image>
+    <Image x="36" y="36">badge.scale-150.png</Image>
+    <Image x="48" y="48">badge.scale-200.png</Image>
+    <Image x="96" y="96">badge.scale-400.png</Image>
+  </Type>
 
   <Type name="UWP list" folderName="Assets">
     <Image x="44" y="44">Square44x44Logo.scale-100.png</Image>
