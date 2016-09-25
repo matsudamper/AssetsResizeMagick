@@ -68,4 +68,12 @@
     <Image x="48" y="48">Square44x44Logo.targetsize-48_altform-unplated.png</Image>
     <Image x="256" y="256">Square44x44Logo.targetsize-256_altform-unplated.png</Image>
   </Type>
+
+  <Type name="Android icon" folderName="res">
+    <Image x="72" folderName="mipmap-hdpi">ic_launcher.png</Image>
+    <Image x="48" folderName="mipmap-mdpi">ic_launcher.png</Image>
+    <Image x="96" folderName="mipmap-xhdpi">ic_launcher.png</Image>
+    <Image x="144" folderName="mipmap-xxhdpi">ic_launcher.png</Image>
+    <Image x="192" folderName="mipmap-xxxhdpi">ic_launcher.png</Image>
+  </Type>
 </Types>
