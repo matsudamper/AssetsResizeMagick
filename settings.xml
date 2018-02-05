@@ -84,4 +84,12 @@
     <Image x="72" folderName="drawable-xxhdpi"></Image>
     <Image x="96" folderName="drawable-xxxhdpi"></Image>
   </Type>
+
+  <Type name="Android resource 48dp" folderName="res">
+    <Image x="72" folderName="drawable-hdpi"></Image>
+    <Image x="48" folderName="drawable-mdpi"></Image>
+    <Image x="96" folderName="drawable-xhdpi"></Image>
+    <Image x="144" folderName="drawable-xxhdpi"></Image>
+    <Image x="192" folderName="drawable-xxxhdpi"></Image>
+  </Type>
 </Types>
