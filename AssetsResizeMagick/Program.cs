@@ -108,9 +108,11 @@ namespace AssetsResizeMagick
             {
                 var path = files[i];
 
-                var magicSettings = new ImageMagick.MagickReadSettings();
-                magicSettings.Density = new ImageMagick.Density(dpi);
-                magicSettings.BackgroundColor = new ImageMagick.MagickColor("#00000000");
+                var magicSettings = new ImageMagick.MagickReadSettings
+                {
+                    Density = new ImageMagick.Density(dpi),
+                    BackgroundColor = new ImageMagick.MagickColor("#00000000")
+                };
 
                 using (var magickImage = new ImageMagick.MagickImage(path, magicSettings))
                 {
