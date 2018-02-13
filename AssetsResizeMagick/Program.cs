@@ -40,7 +40,7 @@ namespace AssetsResizeMagick
             settings = (Settings)serializer.Deserialize(fs);
 
             // 表示
-            for (int i = 0; i < settings.types.Count; i++)
+            for (var i = 0; i < settings.types.Count; i++)
             {
                 var type = settings.types[i];
                 Console.WriteLine("{0}, {1}", i + 1, type.name);
@@ -104,7 +104,7 @@ namespace AssetsResizeMagick
 
         private static void Translate()
         {
-            for (int i = 1; i < files.Length; i++)
+            for (var i = 1; i < files.Length; i++)
             {
                 var path = files[i];
 
@@ -138,7 +138,7 @@ namespace AssetsResizeMagick
                         }
                         else
                         {
-                            outPath += String.Format(@"\{0}.png", Path.GetFileNameWithoutExtension(path));
+                            outPath += $@"\{Path.GetFileNameWithoutExtension(path)}.png";
                         }
 
                         // 出力
